@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "D2L-Enhance",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "action": {
+      "default_popup": "./popup/popup.html",
+      "default_icon": "./images/download.png"
+    },
+    "content_scripts": [
+    {
+      "js": [
+        "./scripts/content.js"
+        ],
+      "matches": [
+        "<all_urls>",
+        "https://onq.queensu.ca/d2l/lms/grades/my_grades/*"
+      ]
+    }
+    ],
+    "permissions": ["activeTab", "scripting"]
+}
+
+
+  
