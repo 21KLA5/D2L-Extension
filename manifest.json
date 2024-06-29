@@ -10,11 +10,11 @@
     "content_scripts": [
     {
       "js": [
-        "./scripts/content.js"
+        "scripts/content.js"
         ],
       "matches": [
-        "<all_urls>",
-        "https://onq.queensu.ca/d2l/lms/grades/my_grades/*"
+        "https://onq.queensu.ca/d2l/lms/grades/my_grades/*",
+        "<all_urls>"
       ]
     }
     ],
