@@ -37,31 +37,31 @@ sumWeight = sumWeight.toFixed(2);
 
 var gpa; 
 if (sumWeight <50){
-    gpa = "F";
+    gpa = "F : 0.0";
 }else if (sumWeight >= 50 && sumWeight < 53 ){
-    gpa = "D-";
+    gpa = "D- : 0.7";
 }else if (sumWeight >= 53 && sumWeight < 57){
-    gpa ="D";
+    gpa ="D : 1.0";
 }else if (sumWeight >= 57 && sumWeight < 60){
-    gpa = "D+";
+    gpa = "D+ : 1.3";
 }else if (sumWeight >= 60 && sumWeight < 63){
-    gpa = "C-";
+    gpa = "C- : 1.7";
 }else if (sumWeight >= 63 && sumWeight < 67){
-    gpa = "C";
+    gpa = "C : 2.0";
 }else if (sumWeight >= 67 && sumWeight < 70){
-    gpa ="C+";
+    gpa ="C+ : 2.3";
 }else if (sumWeight >= 70 && sumWeight < 73){
-    gpa = "B-";
+    gpa = "B- : 2.7";
 }else if (sumWeight >= 73 && sumWeight < 77){
-    gpa = "B";
+    gpa = "B : 3.0";
 }else if (sumWeight >= 77 && sumWeight < 80){
-    gpa = "B+";
+    gpa = "B+ : 3.3";
 }else if (sumWeight >= 80 && sumWeight < 85){
-    gpa = "A-";
+    gpa = "A- : 3.7";
 }else if (sumWeight >= 85 && sumWeight < 90){
-    gpa = "A";
+    gpa = "A : 4.0";
 }else{
-    gpa="A+";
+    gpa="A+ : 4.3";
 }
 
 console.log(sumWeight, gpa);
