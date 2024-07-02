@@ -14,7 +14,7 @@ body{
     display: none;
 }
 
-#myButton1{
+#myButton1, #myButton3{
     background-color: lightblue;
     border-radius: 80%;
     border: none;
@@ -25,20 +25,13 @@ body{
     display: inline-block;
     font-size: 16px;
     font: bold;
+    text-emphasis: bold;
     
 }
 
-#myButton3{
-    background-color: red;
-    border-radius: 80%;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;      
-    font: bold;
+#myButton1:hover, #myButton3:hover{
+    cursor: pointer;
+    background-color: lightcoral;
 }
 
 #normalButton{
@@ -52,4 +45,5 @@ body{
     display: inline-block;
     font-size: 20px;      
     font: bold;
+    text-emphasis: bold;
 }
