@@ -5,7 +5,13 @@
     "version": "1.0",
     "action": {
       "default_popup": "./popup/popup.html",
-      "default_icon": "./images/download.png"
+      "default_icon": "./images/onQ.png"
+    },
+    "icons": {
+      "16": "./images/onQ16.png",
+      "32": "./images/onQ32.png",
+      "48": "./images/onQ48.png",
+      "128": "./images/onQ128.png"
     },
     "content_scripts": [
     {
