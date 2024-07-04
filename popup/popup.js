@@ -28,7 +28,7 @@ chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs){
     chrome.storage.local.get(['number3'], function(result) {
       if (result.number3) {
         var button1 = document.getElementById("myButton3");
-        button1.textContent = result.number3;
+        button1.textContent = result.number3 + '%';
         button1.id = "normalButton"; 
 
       } else {
@@ -36,8 +36,9 @@ chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs){
       }
     });
   })
-  
 });
+
+
 
   
 

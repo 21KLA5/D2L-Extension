@@ -26,6 +26,7 @@ body{
     font-size: 16px;
     font: bold;
     text-emphasis: bold;
+    min-width: 240px;
     
 }
 

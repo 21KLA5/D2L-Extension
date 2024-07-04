@@ -7,8 +7,10 @@ var weightIndex;
 var weightsList = []; 
 
 var tempWeight;
+var tempTotalWeight = 0; 
 var tempFloatWeight;
 var sumWeight = 0; 
+var totalWeight; 
 
 
 /*var rows = myTable.getElementsByTagName('tr');
@@ -30,8 +32,21 @@ for (i = 1; i < numRows; i++){
         tempWeight = weightsList[i].split(" / ")[0];
         tempFloatWeight = parseFloat(tempWeight);
         sumWeight = sumWeight + tempFloatWeight; 
+
+        //For the current grades part
+
+        totalWeight = parseFloat(weightsList[i].split(" / ")[1]);
+        if (isNaN(totalWeight)){
+            totalWeight = 0; 
+        }
+        tempTotalWeight = tempTotalWeight + totalWeight;
+        
     }
 }
+
+
+var currentGrade = (sumWeight/tempTotalWeight) * 100; 
+currentGrade = currentGrade.toFixed(2);
 
 sumWeight = sumWeight.toFixed(2);
 
@@ -64,9 +79,12 @@ if (sumWeight <50){
     gpa="A+ : 4.3";
 }
 
-console.log(sumWeight, gpa);
 chrome.storage.local.set({ number1: sumWeight }, () => {
 });
 
-chrome.storage.local.set({ number3: gpa }, () => {
+chrome.storage.local.set({ number2: gpa }, () => {
 });
+
+chrome.storage.local.set({ number3: currentGrade }, () => {
+});
+
