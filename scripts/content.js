@@ -51,6 +51,7 @@ currentGrade = currentGrade.toFixed(2);
 sumWeight = sumWeight.toFixed(2);
 
 var gpa; 
+/*
 if (sumWeight <50){
     gpa = "F : 0.0";
 }else if (sumWeight >= 50 && sumWeight < 53 ){
@@ -78,6 +79,7 @@ if (sumWeight <50){
 }else{
     gpa="A+ : 4.3";
 }
+*/
 
 chrome.storage.local.set({ number1: sumWeight }, () => {
 });
