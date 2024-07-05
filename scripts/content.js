@@ -36,12 +36,12 @@ for (i = 1; i < numRows; i++){
         //For the current grades part
 
         totalWeight = parseFloat(weightsList[i].split(" / ")[1]);
-        if (isNaN(totalWeight)){
+        if (isNaN(totalWeight) || tempWeight == 0){
             totalWeight = 0; 
         }
         tempTotalWeight = tempTotalWeight + totalWeight;
         
-    }
+    }   
 }
 
 
@@ -51,7 +51,7 @@ currentGrade = currentGrade.toFixed(2);
 sumWeight = sumWeight.toFixed(2);
 
 var gpa; 
-if (sumWeight <50){
+/*if (sumWeight <50){
     gpa = "F : 0.0";
 }else if (sumWeight >= 50 && sumWeight < 53 ){
     gpa = "D- : 0.7";
@@ -78,6 +78,7 @@ if (sumWeight <50){
 }else{
     gpa="A+ : 4.3";
 }
+*/
 
 chrome.storage.local.set({ number1: sumWeight }, () => {
 });
