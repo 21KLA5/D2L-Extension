@@ -51,7 +51,7 @@ currentGrade = currentGrade.toFixed(2);
 sumWeight = sumWeight.toFixed(2);
 
 var gpa; 
-/*if (sumWeight <50){
+if (sumWeight <50){
     gpa = "F : 0.0";
 }else if (sumWeight >= 50 && sumWeight < 53 ){
     gpa = "D- : 0.7";

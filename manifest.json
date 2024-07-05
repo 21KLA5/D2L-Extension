@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "onQ Grade Extension",
-    "description": "Base Level Extension",
+    "description": "Tired of using a grade calculator to find your current grade in a Queen's onQ course?",
     "version": "1.0",
     "action": {
       "default_popup": "./popup/popup.html",
