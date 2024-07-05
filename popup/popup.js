@@ -1,10 +1,13 @@
 chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs){
   var url = String(tabs[0].url)
   var header = document.getElementById("text");
+  var subheading = document.getElementById("subtext");
+
   if (url.includes("https://onq.queensu.ca/d2l/lms/grades/my_grades")){ 
     header.textContent = "Data Found"
   }else{
-    header.textContent = "No Data Found!\n You may be on the wrong page.\n Please navigate to onQ grades tab!"; 
+    header.textContent = "No Data Found!";
+    subheading.textContent = "Please navigate to onQ Grades tab";
     document.getElementById("myButton1").style.display = 'none';
     document.getElementById("myButton3").style.display = 'none';
     document.getElementById("According").style.display = 'none';
